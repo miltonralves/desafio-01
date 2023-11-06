@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Desafio-01 Studion</title>
   </head>
   <body>
@@ -13,50 +19,84 @@
         <span class="subtitle">Eventos</span>
       </h1>
       <ul>
-        <li>Empresa</li>
-        <li>Eventos</li>
-        <li>Galeria</li>
-        <li>Depoimentos</li>
-        <li>Contato</li>
+        <li>
+          <a href="#" class="selected"> Empresa </a>
+        </li>
+        <li>
+          <a href="#"> Eventos </a>
+        </li>
+        <li>
+          <a href="#"> Galeria </a>
+        </li>
+        <li>
+          <a href="#"> Depoimentos </a>
+        </li>
+        <li>
+          <a href="#"> Contato </a>
+        </li>
       </ul>
     </nav>
-    <main>
-      <header>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate
-        </p>
-        <img src="./images/pessoa.png" alt="Studion - Pessoa ao celular" />
-      </header>
 
-      <section>
-        <h2>Quem Confia no nosso trabalho</h2>
+    <header>
+      <h2>.empresa</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget
+        ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa
+      </p>
+    </header>
+
+    <main>
+      <section class="section1">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        <p class="paragrafo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="paragrafo2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+        <div>
+           <img class="pessoa" src="./images/pessoa.png" alt="Studion - Pessoa ao celular" />
+        </div>
+      </section>
+
+      <section class="section2">
+        <h4>Quem Confia no nosso trabalho</h2>
         <img src="./images/logos.png" alt="Logo dos parceiros Studion" />
       </section>
 
-      <section>
+      <section class="section3">
         <img
           src="./images/video.jpeg"
           alt="Homen sentado a sacada de um predio observando a vista da cidade"
         />
       </section>
       <footer>
-        <h2>Studi<span>on</span> <span>Eventos</span></h2>
-        <form>
-          <label for="email"> Receba news e promoções </label>
-          <input type="email" placeholder="Email" />
-          <input type="button" value="Enviar" />
-        </form>
-        <hr />
-        <ul>
-          <li>Facebook</li>
-          <li>Whatsapp</li>
-          <li>Youtube</li>
-        </ul>
+         <div>
+            <h2> Studi<span class="accent">on</span>
+               <span class="subtitle">Eventos</span>
+            </h2>
+            <form>
+              <label for="email"> Receba news e promoções </label>
+              <input type="email" placeholder="Email" />
+              <button> 
+               <img src="./images/icons/send2.svg" alt="enviar">
+              </button>
+            </form>
+            <ul>
+               <li>
+                  <a href="">
+                     <img src="./images/icons/facebook.svg" alt="Icon facebook">
+                  </a>
+               </li>
+               <li>   
+                  <a href="">
+                     <img src="./images/icons/whatsapp.svg" alt="Icon whatsapp">
+                  </a></li>
+               <li>
+                  <a href="">
+                     <img src="./images/icons/youtube.svg" alt="Icon youtube">
+                  </a>
+               </li>
+            </ul>                                    
+         </div>
+         <hr/>
+         <p>Studi<span>on</span> - Todos os direitos reservados</p>
       </footer>
     </main>
   </body>
